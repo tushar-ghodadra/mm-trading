@@ -24,7 +24,7 @@ index.html              page shell, fonts, meta tags
 src/
   main.jsx              React entry point
   App.jsx               page composition (section order)
-  config.js             contact details, social links, regulatory details: ALL PLACEHOLDERS
+  config.js             contact details, regulatory details: ALL PLACEHOLDERS
   styles.css            design tokens (colours, fonts) at the top, then each section
   data/plans.js         the nine research plans
   components/           one file per section (Hero, Plans, Faq, Contact, ...)
@@ -40,7 +40,7 @@ src/
 
 | To change | Edit |
 | --- | --- |
-| Phone, WhatsApp, email, address, social links | `src/config.js` |
+| Phone, WhatsApp, email, hours | `src/config.js` |
 | Plans, their descriptions and bullet points | `src/data/plans.js` |
 | Colours and fonts | the `:root` block at the top of `src/styles.css` |
 | Copy in a section | that section's file in `src/components/` |

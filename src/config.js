@@ -12,18 +12,7 @@ const config = {
   whatsapp: "919712193051",          // country code + number, no "+" or spaces
   whatsappMessage: "Hi MM Trading, I would like to know more about your research plans.",
   email: "mavdiamehul@gmail.com",
-  address: "Office address line, City, State – PIN",
   hours: "Mon – Fri · 9:00 AM – 6:00 PM IST",
-
-  // Social links (icon names must exist in components/Icon.jsx)
-  social: {
-    instagram: "#",
-    telegram: "#",
-    youtube: "#",
-    x: "#",
-    linkedin: "#",
-    facebook: "#"
-  },
 
   // Regulatory details. Shown in the footer only when filled in.
   // Fill these in ONLY with genuine registration details.

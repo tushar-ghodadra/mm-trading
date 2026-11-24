@@ -87,8 +87,6 @@ function ContactForm() {
 }
 
 export default function Contact() {
-  const socials = Object.entries(config.social || {}).filter(([, url]) => url);
-
   return (
     <section className="section" id="contact">
       <div className="container contact">
@@ -107,26 +105,10 @@ export default function Contact() {
             {config.email && (
               <li><span className="contact__ico"><Icon name="mail" /></span><div><small>Email</small><a href={emailLink()}>{config.email}</a></div></li>
             )}
-            {config.address && (
-              <li><span className="contact__ico"><Icon name="pin" /></span><div><small>Office</small><span>{config.address}</span></div></li>
-            )}
             {config.hours && (
               <li><span className="contact__ico"><Icon name="clock" /></span><div><small>Hours</small><span>{config.hours}</span></div></li>
             )}
           </ul>
-
-          <div className="socials reveal" aria-label="Social media">
-            {socials.map(([name, url]) => (
-              <a
-                key={name}
-                href={url}
-                aria-label={name[0].toUpperCase() + name.slice(1)}
-                {...(url !== "#" ? { target: "_blank", rel: "noopener" } : {})}
-              >
-                <Icon name={name} />
-              </a>
-            ))}
-          </div>
         </div>
 
         <ContactForm />
